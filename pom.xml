@@ -12,7 +12,7 @@
 
     <groupId>org.exist-db</groupId>
     <artifactId>exist-apps-archetype</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>eXist-db Apps Archetype</name>
@@ -37,7 +37,7 @@
         <url>https://www.github.com/exist-db/exist-apps-archetype.git</url>
         <connection>scm:git:https://www.github.com/exist-db/exist-apps-archetype.git</connection>
         <developerConnection>scm:git:https://www.github.com/exist-db/exist-apps-archetype.git</developerConnection>
-      <tag>1.0</tag>
+      <tag>HEAD</tag>
   </scm>
     <issueManagement>
         <system>GitHub</system>
