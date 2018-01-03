@@ -20,6 +20,8 @@
     <dependency processor="http://exist-db.org" semver-min="${exist.version}" />
 
     <prepare>pre-install.xql</prepare>
+    <!-- Collection inside /db/apps where xar-resources will be copied to -->
+    <target>${package-abbrev}</target>
 
     <!-- includes everything in src/main/xar-resources, README.md, and LICENSE -->
     <fileSets>
