@@ -132,17 +132,7 @@
                 <version>3.0.2</version>
                 <configuration>
                     <archive>
-                        <manifest>
-                            <!-- unfortunately this is needed by kuberam-expath-plugin to successfully
-                            generate its components.xml -->
-                            <mainClass>${package}.${example.module.java.classname}</mainClass>
-                            <packageName>${package}</packageName>
-                        </manifest>
                         <manifestEntries>
-                            <!-- unfortunately this is needed by kuberam-expath-plugin to successfully
-                            generate its components.xml -->
-                            <ModuleNamespace>${example.module.namespace}</ModuleNamespace>
-
                             <Build-Tag>${build-tag}</Build-Tag>
                             <Git-Commit>${build-commit}</Git-Commit>
                             <Git-Commit-Abbrev>${build-commit-abbrev}</Git-Commit-Abbrev>
