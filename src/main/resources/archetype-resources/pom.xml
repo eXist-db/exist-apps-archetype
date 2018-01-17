@@ -132,6 +132,10 @@
                 <version>3.0.2</version>
                 <configuration>
                     <archive>
+                        <manifest>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
                         <manifestEntries>
                             <Build-Tag>${build-tag}</Build-Tag>
                             <Git-Commit>${build-commit}</Git-Commit>
