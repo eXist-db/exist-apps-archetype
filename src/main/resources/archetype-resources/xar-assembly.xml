@@ -60,4 +60,12 @@
         </dependencySet>
     </dependencySets>
 
+    <!-- register the Java module to eXist-db -->
+    <components>
+        <resource>
+            <public-uri>${example.module.namespace}</public-uri>
+            <file>${package}.${example.module.java.classname}</file>
+        </resource>
+    </components>
+
 </package>
