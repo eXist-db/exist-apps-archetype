@@ -2,13 +2,20 @@
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                       xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
                       name="exist-apps-archetype" partial="false">
+<!-- workaround for https://issues.apache.org/jira/browse/MRESOURCES-190 -->
+                      <requiredProperties>
+                          <requiredProperty key="gitignore">
+                              <defaultValue>.gitignore</defaultValue>
+                          </requiredProperty>
+                      </requiredProperties>
 
     <fileSets>
 
         <fileSet filtered="true" packaged="false" encoding="UTF-8">
             <directory></directory>
             <includes>
-                <include>.gitignore</include>
+
+                <include>__gitignore__</include>
                 <include>README.md</include>
                 <include>LGPL-2.1-template.txt</include>
                 <include>LICENSE</include>
