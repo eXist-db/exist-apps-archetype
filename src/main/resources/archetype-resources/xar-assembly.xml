@@ -64,7 +64,7 @@
     <components>
         <resource>
             <public-uri>${example.module.namespace}</public-uri>
-            <file>${package}.${example.module.java.classname}</file>
+            <file>urn:java:class:${package}.${example.module.java.classname}</file>
         </resource>
     </components>
 
