@@ -48,7 +48,7 @@
         <project.build.source>1.8</project.build.source>
         <project.build.target>1.8</project.build.target>
 
-        <exist.version>3.6.1</exist.version>
+        <exist.version>4.7.0</exist.version>
 
         <!-- used in the EXPath Package Descriptor -->
         <package-name>https://my-organisation.com/exist-db/app</package-name>

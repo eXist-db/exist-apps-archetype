@@ -168,12 +168,18 @@
                 <!--
                     Trigger for registering the GNU Crypto JCE Provider with Java
                 -->
-                <trigger class="org.exist.security.GnuCryptoJceProviderStartupTrigger"/>
+                <trigger class="org.exist.security.BouncyCastleJceProviderStartupTrigger"/>
 
                 <!--
                     Trigger for registering eXists XML:DB URL handler with Java
                 -->
-                <trigger class="org.exist.protocolhandler.URLStreamHandlerStartupTrigger"/>
+                <trigger class="org.exist.protocolhandler.URLStreamHandlerStartupTrigger">
+                    <!-- Keeps stream data on disk (temporary files are used for XML documents) -->
+                    <parameter name="mode" value="disk"/>
+
+                    <!-- Keep's stream data in memory -->
+                    <parameter name="mode" value="memory"/>
+                </trigger>
             </triggers>
         </startup>
 
