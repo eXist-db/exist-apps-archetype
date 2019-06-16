@@ -188,8 +188,24 @@
 
     <repositories>
         <repository>
-            <id>exist</id>
-            <url>http://repo.exist-db.org/repository/exist-db</url>
+            <id>exist-db</id>
+            <url>http://repo.evolvedbinary.com/repository/exist-db/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>exist-db-snapshots</id>
+            <url>http://repo.evolvedbinary.com/repository/exist-db-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
