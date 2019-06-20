@@ -140,6 +140,34 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+                <configuration>
+                    <excludes>
+                        <exclude>projects/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <!-- localRepositoryPath>${project.build.directory}/it-repo</localRepositoryPath -->
+                    <ignoreEOLStyle>true</ignoreEOLStyle>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>archetype-integration-tests</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <!-- Attach source jars -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
