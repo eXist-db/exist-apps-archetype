@@ -1,5 +1,7 @@
 # Maven Archetype for eXist Apps
 
+[![Build Status](https://travis-ci.com/eXist-db/exist-apps-archetype.svg?branch=master)](https://travis-ci.com/eXist-db/exist-apps-archetype)
+
 This repository contains the code for a Maven Archetype for eXist Apps.
 
 This archetype can be used to generate a skeleton project for building an eXist-db App (EXPath Package) using Maven.
