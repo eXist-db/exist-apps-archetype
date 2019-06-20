@@ -17,7 +17,7 @@ $ cd my-projects
 $ mvn archetype:generate \
     -DarchetypeGroupId=org.exist-db \
     -DarchetypeArtifactId=exist-apps-archetype \
-    -DarchetypeVersion=1.10.0
+    -DarchetypeVersion=1.10.1
 ```
 
 Maven will then prompt you for a `groupId`, `artifactId`, `version`, and `package` for your project. You need only specify the `groupId` and `artifactId`, for the others you may accept the defaults.
