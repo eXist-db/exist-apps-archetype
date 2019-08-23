@@ -153,7 +153,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-archetype-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>3.1.2</version>
                 <configuration>
                     <!-- localRepositoryPath>${project.build.directory}/it-repo</localRepositoryPath -->
                     <ignoreEOLStyle>true</ignoreEOLStyle>
