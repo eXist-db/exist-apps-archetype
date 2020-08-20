@@ -72,26 +72,30 @@
             <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
-                <version>3.0</version>
+                <version>4.0.rc2</version>
                 <configuration>
-                    <header>LGPL2.1-template.txt</header>
                     <failIfMissing>true</failIfMissing>
                     <aggregate>true</aggregate>
                     <strictCheck>true</strictCheck>
-                    <properties>
-                        <owner>${project.organization.name}</owner>
-                        <organization>${project.organization.name}</organization>
-                        <email>exit-open@lists.sourceforge.net</email>
-                        <url>${project.organization.url}</url>
-                    </properties>
-                    <excludes>
-                        <exclude>pom.xml</exclude>
-                        <exclude>README.md</exclude>
-                        <exclude>LICENSE</exclude>
-                        <exclude>src/main/resources/archetype-resources/**</exclude>
-                        <exclude>.idea/</exclude>
-                        <exclude>*.iml</exclude>
-                    </excludes>
+                    <licenseSets>
+                        <licenseSet>
+                            <header>com/mycila/maven/plugin/license/templates/LGPL-21.txt</header>
+                            <properties>
+                                <owner>${project.organization.name}</owner>
+                                <organization>${project.organization.name}</organization>
+                                <email>exit-open@lists.sourceforge.net</email>
+                                <url>${project.organization.url}</url>
+                            </properties>
+                            <excludes>
+                                <exclude>pom.xml</exclude>
+                                <exclude>README.md</exclude>
+                                <exclude>LICENSE</exclude>
+                                <exclude>src/main/resources/archetype-resources/**</exclude>
+                                <exclude>.idea/</exclude>
+                                <exclude>*.iml</exclude>
+                            </excludes>
+                        </licenseSet>
+                    </licenseSets>
                 </configuration>
             </plugin>
             <plugin>
