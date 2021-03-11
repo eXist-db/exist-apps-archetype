@@ -17,10 +17,10 @@ $ cd my-projects
 $ mvn archetype:generate \
     -DarchetypeGroupId=org.exist-db \
     -DarchetypeArtifactId=exist-apps-archetype \
-    -DarchetypeVersion=2.0.0
+    -DarchetypeVersion=2.1.0
 ```
 
-*NOTE*: the above will generate a project for eXist-db 5.0.0, if you want a project for eXist-db 4.7.1, then use `archetypeVersion=1.10.1i` instead.
+*NOTE*: the above will generate a project for eXist-db 5.0.0, if you want a project for eXist-db 4.7.1, then use `archetypeVersion=1.10.1` instead.
 
 Maven will then prompt you for a `groupId`, `artifactId`, `version`, and `package` for your project. You need only specify the `groupId` and `artifactId`, for the others you may accept the defaults.
 
