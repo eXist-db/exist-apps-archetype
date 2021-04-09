@@ -1,5 +1,7 @@
 # Maven Archetype for eXist Apps
 
+[![Build Status](https://travis-ci.com/eXist-db/exist-apps-archetype.svg?branch=master)](https://travis-ci.com/eXist-db/exist-apps-archetype)
+
 This repository contains the code for a Maven Archetype for eXist Apps.
 
 This archetype can be used to generate a skeleton project for building an eXist-db App (EXPath Package) using Maven.
@@ -15,8 +17,10 @@ $ cd my-projects
 $ mvn archetype:generate \
     -DarchetypeGroupId=org.exist-db \
     -DarchetypeArtifactId=exist-apps-archetype \
-    -DarchetypeVersion=1.8
+    -DarchetypeVersion=2.1.0
 ```
+
+*NOTE*: the above will generate a project for eXist-db 5.0.0, if you want a project for eXist-db 4.7.1, then use `archetypeVersion=1.10.1` instead.
 
 Maven will then prompt you for a `groupId`, `artifactId`, `version`, and `package` for your project. You need only specify the `groupId` and `artifactId`, for the others you may accept the defaults.
 
@@ -24,7 +28,7 @@ Maven will then prompt you for a `groupId`, `artifactId`, `version`, and `packag
 
 * `artifactId` is just a simple name without spaces for the App itself. Together the `groupId:appId` must be unique.
 
-* `version` almost speaks for itself. In Maven `-SNAPSHOT` are development versions. Your first version should always be `1.0-SNAPSHOT`, with the first release subsequently being `1.0`.  
+* `version` almost speaks for itself. In Maven `-SNAPSHOT` are development versions. Your first version should always be `1.0.0-SNAPSHOT`, with the first release subsequently being `1.0.0`.  
 
 
 e.g.:
@@ -32,7 +36,7 @@ e.g.:
 ```bash
 Define value for property 'groupId': : com.myorganisation.existdb.app
 Define value for property 'artifactId': : my-app1
-Define value for property 'version':  1.0-SNAPSHOT: : 
+Define value for property 'version':  1.0.0-SNAPSHOT: : 
 Define value for property 'package':  com.myorganisation.existdb.app: : 
 Confirm properties configuration:
 groupId: com.myorganisation.existdb.app

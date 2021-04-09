@@ -64,7 +64,7 @@
     <components>
         <resource>
             <public-uri>${example.module.namespace}</public-uri>
-            <file>urn:java:class:${package}.${example.module.java.classname}</file>
+            <file>urn:java:class:com.myorganisation.existdb.app.${example.module.java.classname}</file>
         </resource>
     </components>
 

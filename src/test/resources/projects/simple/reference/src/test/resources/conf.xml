@@ -726,7 +726,7 @@
             raise-error-on-failed-retrieval="no">
 
         <builtin-modules>
-            <module uri="https://my-organisation.com/exist-db/ns/app/my-java-module" class="${package}.ExampleModule"/>
+            <module uri="https://my-organisation.com/exist-db/ns/app/my-java-module" class="com.myorganisation.existdb.app.ExampleModule"/>
         </builtin-modules>
     </xquery>
 
