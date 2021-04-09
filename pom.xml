@@ -263,6 +263,7 @@
     <repositories>
         <repository>
             <id>exist</id>
+            <!-- TODO(DP): fix the cert on the server and switch to https://repo.exist-db.org/repository/exist-db/ -->
             <url>http://repo.exist-db.org/repository/exist-db/</url>
         </repository>
     </repositories>
@@ -270,7 +271,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>clojars.org</id>
-            <url>http://clojars.org/repo</url>
+            <url>https://clojars.org/repo</url>
         </pluginRepository>
     </pluginRepositories>
 
