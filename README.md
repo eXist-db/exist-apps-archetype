@@ -1,6 +1,6 @@
 # Maven Archetype for eXist Apps
 
-[![Build Status](https://travis-ci.com/eXist-db/exist-apps-archetype.svg?branch=master)](https://travis-ci.com/eXist-db/exist-apps-archetype)
+[![CI](https://github.com/eXist-db/exist-apps-archetype/actions/workflows/ci.yml/badge.svg)](https://github.com/eXist-db/exist-apps-archetype/actions/workflows/ci.yml)
 
 This repository contains the code for a Maven Archetype for eXist Apps.
 
@@ -17,10 +17,10 @@ $ cd my-projects
 $ mvn archetype:generate \
     -DarchetypeGroupId=org.exist-db \
     -DarchetypeArtifactId=exist-apps-archetype \
-    -DarchetypeVersion=2.1.0
+    -DarchetypeVersion=3.0.0
 ```
 
-*NOTE*: the above will generate a project for eXist-db 5.0.0, if you want a project for eXist-db 4.7.1, then use `archetypeVersion=1.10.1` instead.
+*NOTE*: the above will generate a project for eXist-db 6.x.x, if you want a project for eXist-db 5.x.x, then use `archetypeVersion=2.1.0`, or if you want a project for eXist-db 4.7.1, then use `archetypeVersion=1.10.1` instead.
 
 Maven will then prompt you for a `groupId`, `artifactId`, `version`, and `package` for your project. You need only specify the `groupId` and `artifactId`, for the others you may accept the defaults.
 
