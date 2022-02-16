@@ -49,9 +49,42 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.source>1.8</project.build.source>
         <project.build.target>1.8</project.build.target>
+        <buildversion-plugin.version>1.0.3</buildversion-plugin.version>
     </properties>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <!-- https://stackoverflow.com/a/14809920/1021892 -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.code54.mojo</groupId>
+                                        <artifactId>buildversion-plugin</artifactId>
+                                        <versionRange>${buildversion-plugin.version}</versionRange>
+                                        <goals>
+                                            <goal>set-properties</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute>
+                                            <runOnIncremental>false</runOnIncremental>
+                                        </execute >
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -101,7 +134,7 @@
             <plugin>
                 <groupId>com.code54.mojo</groupId>
                 <artifactId>buildversion-plugin</artifactId>
-                <version>1.0.3</version>
+                <version>${buildversion-plugin.version}</version>
                 <executions>
                     <execution>
                         <phase>validate</phase>
