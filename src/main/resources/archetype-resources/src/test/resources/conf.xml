@@ -727,6 +727,14 @@
 
         <builtin-modules>
             <module uri="https://my-organisation.com/exist-db/ns/app/my-java-module" class="${package}.ExampleModule"/>
+            
+            <!-- The following modules are required to run the xquery test suite-->
+            <module uri="http://exist-db.org/xquery/inspection" class="org.exist.xquery.functions.inspect.InspectionModule"/>
+            <module uri="http://exist-db.org/xquery/system" class="org.exist.xquery.functions.system.SystemModule"/>
+            <module uri="http://exist-db.org/xquery/util" class="org.exist.xquery.functions.util.UtilModule"/>
+            <module uri="http://exist-db.org/xquery/xmldb" class="org.exist.xquery.functions.xmldb.XMLDBModule"/>
+            <module uri="http://expath.org/ns/http-client" class="org.expath.exist.HttpClientModule"/>
+            <module uri="http://www.w3.org/2005/xpath-functions/map" class="org.exist.xquery.functions.map.MapModule"/>
         </builtin-modules>
     </xquery>
 
